@@ -19,11 +19,13 @@ class MergeSortedArray:
 
     def merge(self, nums1, m, nums2, n):
         """
-        :type nums1: List[int]
-        :type m: int
-        :type nums2: List[int]
-        :type n: int
-        :rtype: None Do not return anything, modify nums1 in-place instead.
+        Time complexity: O(m+n).
+
+        We are performing n+2⋅m reads and n+2⋅m writes. Because constants are 
+        ignored in Big O notation, this gives us a time complexity of O(n+m).
+
+        Space Complexity: O(1)
+        
         """
         if n==0:
             pass
